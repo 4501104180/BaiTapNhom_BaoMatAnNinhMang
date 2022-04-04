@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\15. LapTrinh\\C#\\VigenereWFApp\\VigenereWFApp\\VigenereWFApp.csproj",
+      "projectUniqueName": "D:\\15. LapTrinh\\C#\\BaiTapNhom_BaoMatAnNinhMang\\VigenereWFApp\\VigenereWFApp\\VigenereWFApp.csproj",
       "projectName": "VigenereWFApp",
-      "projectPath": "D:\\15. LapTrinh\\C#\\VigenereWFApp\\VigenereWFApp\\VigenereWFApp.csproj",
+      "projectPath": "D:\\15. LapTrinh\\C#\\BaiTapNhom_BaoMatAnNinhMang\\VigenereWFApp\\VigenereWFApp\\VigenereWFApp.csproj",
       "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-      "outputPath": "D:\\15. LapTrinh\\C#\\VigenereWFApp\\VigenereWFApp\\obj\\",
+      "outputPath": "D:\\15. LapTrinh\\C#\\BaiTapNhom_BaoMatAnNinhMang\\VigenereWFApp\\VigenereWFApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",

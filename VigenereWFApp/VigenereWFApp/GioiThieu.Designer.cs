@@ -87,7 +87,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(316, 28);
             this.label5.TabIndex = 5;
-            this.label5.Text = "Nguyễn Trần Hương - 4501104110";
+            this.label5.Text = "Nguyễn Trần Hương - 4501104101";
             // 
             // label6
             // 

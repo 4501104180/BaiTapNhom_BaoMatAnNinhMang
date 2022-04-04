@@ -117,23 +117,26 @@
             // 
             // txtMess1
             // 
+            this.txtMess1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMess1.Location = new System.Drawing.Point(183, 92);
             this.txtMess1.Name = "txtMess1";
-            this.txtMess1.Size = new System.Drawing.Size(299, 27);
+            this.txtMess1.Size = new System.Drawing.Size(299, 31);
             this.txtMess1.TabIndex = 1;
             // 
             // txtKey1
             // 
+            this.txtKey1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtKey1.Location = new System.Drawing.Point(658, 92);
             this.txtKey1.Name = "txtKey1";
-            this.txtKey1.Size = new System.Drawing.Size(279, 27);
+            this.txtKey1.Size = new System.Drawing.Size(279, 31);
             this.txtKey1.TabIndex = 2;
             // 
             // txtEnc2
             // 
+            this.txtEnc2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEnc2.Location = new System.Drawing.Point(183, 385);
             this.txtEnc2.Name = "txtEnc2";
-            this.txtEnc2.Size = new System.Drawing.Size(299, 27);
+            this.txtEnc2.Size = new System.Drawing.Size(299, 31);
             this.txtEnc2.TabIndex = 7;
             // 
             // label5
@@ -148,9 +151,10 @@
             // 
             // txtKey2
             // 
+            this.txtKey2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtKey2.Location = new System.Drawing.Point(658, 381);
             this.txtKey2.Name = "txtKey2";
-            this.txtKey2.Size = new System.Drawing.Size(279, 27);
+            this.txtKey2.Size = new System.Drawing.Size(279, 31);
             this.txtKey2.TabIndex = 8;
             // 
             // label6
@@ -166,9 +170,10 @@
             // txtEnc1
             // 
             this.txtEnc1.Enabled = false;
+            this.txtEnc1.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtEnc1.Location = new System.Drawing.Point(183, 156);
             this.txtEnc1.Name = "txtEnc1";
-            this.txtEnc1.Size = new System.Drawing.Size(754, 27);
+            this.txtEnc1.Size = new System.Drawing.Size(754, 31);
             this.txtEnc1.TabIndex = 3;
             // 
             // label7
@@ -184,9 +189,10 @@
             // txtMess2
             // 
             this.txtMess2.Enabled = false;
+            this.txtMess2.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.txtMess2.Location = new System.Drawing.Point(183, 452);
             this.txtMess2.Name = "txtMess2";
-            this.txtMess2.Size = new System.Drawing.Size(754, 27);
+            this.txtMess2.Size = new System.Drawing.Size(754, 31);
             this.txtMess2.TabIndex = 9;
             // 
             // label8
