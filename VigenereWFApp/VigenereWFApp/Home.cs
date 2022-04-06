@@ -84,16 +84,17 @@ namespace VigenereWFApp
             txtEnc2.Clear();
         }
 
-        private void tsmiHelp_Click(object sender, EventArgs e)
+        private void tsmiGoiThieu_Click(object sender, EventArgs e)
         {
             frmHelp frm = new frmHelp();
             frm.Show();
         }
-
+        /*
         private void tsmiExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+        */
         //In Mã hoá
         private void btnPrint1_Click(object sender, EventArgs e)
         {
@@ -134,6 +135,54 @@ namespace VigenereWFApp
                     file.Write(txtMess2.Text + "\n");
                     file.Close();
                 }
+            }
+        }
+        //Đọc File Mã hoá
+        private void btnMess1_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader file = new StreamReader(open.FileName);
+                txtMess1.Text = file.ReadToEnd();
+                file.Close();
+            }
+        }
+        //Xuất File Mã hoá
+        private void btnEnc1_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter file = new StreamWriter(save.FileName);
+                file.Write(txtEnc1.Text);
+                file.Close();
+            }
+        }
+        //Đọc File Giải mã
+        private void btnEnc2_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog open = new OpenFileDialog();
+            open.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            if (open.ShowDialog() == DialogResult.OK)
+            {
+                StreamReader file = new StreamReader(open.FileName);
+                txtEnc2.Text = file.ReadToEnd();
+                file.Close();
+            }
+        }
+        //Xuất File Giải mã
+        private void btnMess2_Click(object sender, EventArgs e)
+        {
+            SaveFileDialog save = new SaveFileDialog();
+            save.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            if (save.ShowDialog() == DialogResult.OK)
+            {
+                StreamWriter file = new StreamWriter(save.FileName);
+                file.Write(txtMess2.Text);
+                file.Close();
             }
         }
     }

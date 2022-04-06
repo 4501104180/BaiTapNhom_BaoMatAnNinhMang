@@ -10,9 +10,9 @@ namespace VigenereWFApp
 {
     class Vigenere
     {
-        //public static string nguon = "ABCDEFGHIKLMNOPQRSTUVWXYZ";
+        //public static string nguon = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
         //Việt hoá
-        public static string nguon = "aáàạảãăắằặẳẵâấầậẩẫbcdđeéèẹẻẽêếềệểễfghiíìịỉĩjklmnoóòọỏõôốồộổỗơớờợởỡpqrstuúùụủũưứừựửữvwxyAÁÀẠẢÃĂẮẰẶẲẴÂẤẦẬẨẪBCDĐEÉÈẸẺẼÊẾỀỆỂỄFGHIÍÌỊỈĨJKLMNOÓÒỌỎÕÔỐỒỘỔỖƠỚỜỢỞỠPQRSTUÚÙỤỦŨƯỨỪỰỬỮVWXY0123456789~`!@#$%^&*()-_.:';,/?<>[]{}=+ ";
+        public static string nguon = "aáàạảãăắằặẳẵâấầậẩẫbcdđeéèẹẻẽêếềệểễfghiíìịỉĩjklmnoóòọỏõôốồộổỗơớờợởỡpqrstuúùụủũưứừựửữvwxyýỳỵỷỹAÁÀẠẢÃĂẮẰẶẲẴÂẤẦẬẨẪBCDĐEÉÈẸẺẼÊẾỀỆỂỄFGHIÍÌỊỈĨJKLMNOÓÒỌỎÕÔỐỒỘỔỖƠỚỜỢỞỠPQRSTUÚÙỤỦŨƯỨỪỰỬỮVWXYỲÝỴỶỸ0123456789~`!@#$%^&*()-_.:';,/?<>[]{}=+ ";
         public static char[] P = nguon.ToCharArray();
         public static int[] taokhoa(string vao, int[] key)
         {
