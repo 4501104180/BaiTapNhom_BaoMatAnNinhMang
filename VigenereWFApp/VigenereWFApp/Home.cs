@@ -112,6 +112,7 @@ namespace VigenereWFApp
                     file.Write(txtKey1.Text + "\n");
                     file.Write("Encrypted: ");
                     file.Write(txtEnc1.Text + "\n");
+                    MessageBox.Show("Lưu kết quả thành công !!!", "Thông báo");
                     file.Close();
                 }
             }
@@ -133,6 +134,7 @@ namespace VigenereWFApp
                     file.Write(txtKey2.Text + "\n");
                     file.Write("Message: ");
                     file.Write(txtMess2.Text + "\n");
+                    MessageBox.Show("Lưu kết quả thành công !!!", "Thông báo");
                     file.Close();
                 }
             }
@@ -152,14 +154,19 @@ namespace VigenereWFApp
         //Xuất File Mã hoá
         private void btnEnc1_Click(object sender, EventArgs e)
         {
-            SaveFileDialog save = new SaveFileDialog();
-            save.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-            if (save.ShowDialog() == DialogResult.OK)
+            if (txtEnc1.Text != "")
             {
-                StreamWriter file = new StreamWriter(save.FileName);
-                file.Write(txtEnc1.Text);
-                file.Close();
+                SaveFileDialog save = new SaveFileDialog();
+                save.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                if (save.ShowDialog() == DialogResult.OK)
+                {
+                    StreamWriter file = new StreamWriter(save.FileName);
+                    file.Write(txtEnc1.Text);
+                    MessageBox.Show("Xuất File mã hoá thành công !!!", "Thông báo");
+                    file.Close();
+                }
             }
+            else MessageBox.Show("Chưa có được dữ liệu để xuất !!!", "Thông báo");
         }
         //Đọc File Giải mã
         private void btnEnc2_Click(object sender, EventArgs e)
@@ -176,14 +183,19 @@ namespace VigenereWFApp
         //Xuất File Giải mã
         private void btnMess2_Click(object sender, EventArgs e)
         {
-            SaveFileDialog save = new SaveFileDialog();
-            save.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
-            if (save.ShowDialog() == DialogResult.OK)
+            if (txtMess2.Text != "")
             {
-                StreamWriter file = new StreamWriter(save.FileName);
-                file.Write(txtMess2.Text);
-                file.Close();
+                SaveFileDialog save = new SaveFileDialog();
+                save.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+                if (save.ShowDialog() == DialogResult.OK)
+                {
+                    StreamWriter file = new StreamWriter(save.FileName);
+                    file.Write(txtMess2.Text);
+                    MessageBox.Show("Xuất File giải mã thành công !!!", "Thông báo");
+                    file.Close();
+                }
             }
+            else MessageBox.Show("Chưa có được dữ liệu để xuất !!!", "Thông báo");
         }
     }
 }
