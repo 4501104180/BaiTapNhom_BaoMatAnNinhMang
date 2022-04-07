@@ -37,6 +37,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -63,7 +64,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(199, 379);
+            this.label3.Location = new System.Drawing.Point(199, 413);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(250, 28);
             this.label3.TabIndex = 3;
@@ -93,7 +94,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(199, 249);
+            this.label6.Location = new System.Drawing.Point(199, 284);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(319, 28);
             this.label6.TabIndex = 6;
@@ -103,7 +104,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label8.Location = new System.Drawing.Point(199, 335);
+            this.label8.Location = new System.Drawing.Point(199, 370);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(292, 28);
             this.label8.TabIndex = 8;
@@ -113,11 +114,21 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label9.Location = new System.Drawing.Point(199, 293);
+            this.label9.Location = new System.Drawing.Point(199, 328);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(318, 28);
             this.label9.TabIndex = 7;
             this.label9.Text = "Nguyễn Tuấn Phong - 4501104174";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label7.Location = new System.Drawing.Point(198, 247);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(317, 28);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Nguyễn Thăng Long - 4501104131";
             // 
             // frmHelp
             // 
@@ -125,6 +136,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label6);
@@ -151,5 +163,6 @@
         private Label label6;
         private Label label8;
         private Label label9;
+        private Label label7;
     }
 }
