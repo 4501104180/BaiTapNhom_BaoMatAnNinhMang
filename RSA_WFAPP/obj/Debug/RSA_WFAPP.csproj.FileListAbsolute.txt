@@ -1,0 +1,15 @@
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\RSA_WFAPP.csproj.AssemblyReference.cache
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\RSA_WFAPP.csproj.SuggestedBindingRedirects.cache
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\App.g.cs
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\RSA_WFAPP.csproj.GenerateResource.cache
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\RSA_WFAPP.csproj.CoreCompileInputs.cache
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\DemoRSA.baml
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\DemoRSA.g.cs
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\bin\Debug\RSA_WFAPP.exe.config
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\bin\Debug\RSA_WFAPP.exe
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\bin\Debug\RSA_WFAPP.pdb
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\RSA_WFAPP_MarkupCompile.cache
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\RSA_WFAPP.g.resources
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\RSA_WFAPP.Properties.Resources.resources
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\RSA_WFAPP.exe
+D:\15. LapTrinh\C#\BaiTapNhom_BaoMatAnNinhMang\RSA_ELGAMAL\obj\Debug\RSA_WFAPP.pdb

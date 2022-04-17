@@ -1,0 +1,74 @@
+﻿<Window x:Class="RSA_WFAPP.DemoRSAl"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Demo mã hóa RSA" Height="589" Width="945" WindowStartupLocation="CenterScreen">
+    <Grid Margin="5,5,5,5">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="62*"/>
+            <ColumnDefinition Width="174*"/>
+            <ColumnDefinition Width="46*"/>
+            <ColumnDefinition Width="653*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl HorizontalAlignment="Left" Height="526" Margin="10,10,0,0" VerticalAlignment="Top" Width="907" Grid.ColumnSpan="4">
+            <TabItem Header="Giới thiệu">
+                <Grid Margin="5,5,5,5" Background="#A8DEE0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="114*"/>
+                        <ColumnDefinition Width="32*"/>
+                        <ColumnDefinition Width="13*"/>
+                        <ColumnDefinition Width="732*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Bài tập mã hoá (NHÓM)" HorizontalAlignment="Left" Margin="117,10,0,0" VerticalAlignment="Top" FontSize="30" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" Grid.Column="3" />
+                    <Label Content="Bài tập 2: RSA (60%)" FontSize="30" HorizontalAlignment="Left" Margin="93,65,0,365" FontWeight="Bold" Width="312" Grid.ColumnSpan="4"/>
+                    <Label Content="Thành viên nhóm :" HorizontalAlignment="Left" Margin="93,123,0,0" VerticalAlignment="Top" FontSize="30" FontStyle="Normal" FontWeight="Bold" HorizontalContentAlignment="Center" Grid.ColumnSpan="4" />
+                    <Label FontSize="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Content="Nguyễn Trần Hương - 4501104101" Margin="57,173,0,269" Grid.Column="3" ></Label>
+                    <Label FontSize="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Content="Nguyễn Thăng Long - 4501104131" Margin="52,224,0,212" Grid.Column="3" />
+                    <Label FontSize="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Content="Cao Ngọc Kim Ngân - 4501104149" Margin="51,276,0,160" Grid.Column="3" />
+                    <Label FontSize="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Content="Nguyễn Tuấn Phong - 4501104174" Margin="51,333,0,103" Grid.Column="3" />
+                    <Label FontSize="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Content="Phan Huỳnh Phúc - 4501104180" Margin="70,390,0,46" Grid.Column="3" />
+                    <Label FontSize="30" HorizontalAlignment="Left" HorizontalContentAlignment="Center" Content="Lê Chính Tuệ - 4501104269" Margin="106,442,0,-6" Grid.Column="3" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Demo RSA" >
+                <Grid Margin="5,5,5,5" Background="#A8DEE0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="28*"/>
+                        <ColumnDefinition Width="863*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label Content="Tạo khóa " HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Grid.ColumnSpan="2"/>
+                    <RadioButton Name="rd_tdRSA" Content="Tạo khóa tự động" HorizontalAlignment="Left" Margin="23,56,0,0" VerticalAlignment="Top" Checked="rd_tdRSA_Checked" Grid.Column="1"/>
+                    <RadioButton Name="rd_tcRSA" Content="Tạo khóa tùy chọn" HorizontalAlignment="Left" Margin="151,56,0,0" VerticalAlignment="Top" Checked="rd_tcRSA_Checked" Grid.Column="1"/>
+                    <Label Content="Số nguyên tố bí mật: p = " HorizontalAlignment="Left" Margin="49,81,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Content="Số nguyên tố bí mật: q = " HorizontalAlignment="Left" Margin="49,112,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Content="Hàm số Ф(n) = (p-1)*(q-1): Ф(n) =" HorizontalAlignment="Left" Margin="5,143,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Content="Cặp khóa công khai:" HorizontalAlignment="Left" Margin="19,198,0,0" VerticalAlignment="Top" FontWeight="SemiBold" FontSize="14" Grid.ColumnSpan="2"/>
+                    <Label Content="Số modul công khai n=p.q : n =" HorizontalAlignment="Left" Margin="14,227,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Content="Số mũ công khai: e =" HorizontalAlignment="Left" Margin="70,260,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <Label Content="Khóa bí mật:" HorizontalAlignment="Left" Margin="19,301,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="SemiBold" Grid.ColumnSpan="2"/>
+                    <Label Content="Số bm t/m de///1 (mod Ф(n)): d =" HorizontalAlignment="Left" Margin="5,332,0,0" VerticalAlignment="Top" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="23" Margin="199,84,0,0" TextWrapping="Wrap" Name="rsa_soP" VerticalAlignment="Top" Width="66" PreviewTextInput="rsa_soP_PreviewTextInput" Grid.Column="1"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="199,115,0,0" TextWrapping="Wrap" Name="rsa_soQ" VerticalAlignment="Top" Width="66" Grid.Column="1"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="199,146,0,0" TextWrapping="Wrap" Name="rsa_soPhiN" VerticalAlignment="Top" Width="83" Grid.Column="1"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="199,231,0,0" TextWrapping="Wrap" Name="rsa_soN" VerticalAlignment="Top" Width="83" Grid.Column="1"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="199,263,0,0" TextWrapping="Wrap" Name="rsa_soE" VerticalAlignment="Top" Width="83" Grid.Column="1"/>
+                    <TextBox PreviewTextInput="rsa_soP_PreviewTextInput" HorizontalAlignment="Left" Height="23" Margin="199,332,0,0" TextWrapping="Wrap" Name="rsa_soD" VerticalAlignment="Top" Width="83" Grid.Column="1"/>
+                    <Button Name="rsa_TaoKhoa" Content="Tạo khóa" Height="26" HorizontalAlignment="Left" Margin="54,381,0,0" VerticalAlignment="Top" Width="194" Click="rsa_TaoKhoa_Click" Grid.Column="1"/>
+                    <Label Content="Mã hóa" HorizontalAlignment="Left" Margin="315,10,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Grid.Column="1"/>
+                    <Label Content="Bản rõ" HorizontalAlignment="Left" Margin="315,57,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="SemiBold" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="124" Margin="319,88,0,0" TextWrapping="Wrap" Name="rsa_BanRo" VerticalAlignment="Top" Width="249" Grid.Column="1"/>
+                    <Button Name="rsa_btMaHoa" Content="Thực hiện mã hóa" HorizontalAlignment="Center" Margin="0,231,0,0" VerticalAlignment="Top" Width="128" RenderTransformOrigin="0.84,0.432" Click="rsa_btMaHoa_Click" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="132" Margin="319,292,0,0" TextWrapping="Wrap" Name="rsa_BanMaHoa" VerticalAlignment="Top" Width="249" Grid.Column="1"/>
+                    <Label Content="Bản mã hóa" HorizontalAlignment="Left" Margin="315,259,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="SemiBold" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="124" Margin="584,88,0,0" TextWrapping="Wrap" Name="rsa_banMaHoaGuiDen" VerticalAlignment="Top" Width="249" Grid.Column="1"/>
+                    <TextBox HorizontalAlignment="Left" Height="132" Margin="584,292,0,0" TextWrapping="Wrap" Name="rsa_banGiaiMa" VerticalAlignment="Top" Width="249" Grid.Column="1"/>
+                    <Label Content="Giải mã nhận được bản rõ" HorizontalAlignment="Left" Margin="584,259,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="SemiBold" Grid.Column="1"/>
+                    <Label Content="Bản mã hóa nhận được" HorizontalAlignment="Left" Margin="584,57,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="SemiBold" Grid.Column="1"/>
+                    <Button Name="rsa_btGiaiMa" Content="Thực hiện giải mã" HorizontalAlignment="Left" Margin="620,230,0,0" VerticalAlignment="Top" Width="176" Click="rsa_btGiaiMa_Click" Grid.Column="1"/>
+                    <Button Content="Mã hóa bản rõ mới" Name="rsa_maHoaBanRoMoi" HorizontalAlignment="Left" Margin="516,442,0,0" VerticalAlignment="Top" Width="158" Click="rsa_maHoaBanRoMoi_Click" Height="26" Grid.Column="1"/>
+                    <Button Content="Thoát" Name="rsa_btThoat" HorizontalAlignment="Left" Margin="700,442,0,0" VerticalAlignment="Top" Height="26" Width="76" Click="rsa_btThoat_Click" Grid.Column="1"/>
+                    <Button Name="rsa_TaoKhoaMoi" Content="Tạo mới" HorizontalAlignment="Center" Margin="0,442,0,0" VerticalAlignment="Top" Width="116" Height="26" Click="rsa_TaoKhoaMoi_Click" Grid.Column="1"/>
+                </Grid>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
